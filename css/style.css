@@ -8,6 +8,7 @@
 .meuconteiner{
     background-image: linear-gradient(45deg, #109754a1, #109754a1), url(../img/bakgraund-verde.png);
     background-size: cover;
+    background-position: center center;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -28,15 +29,17 @@
 .texto1 h1{
     font-size: 7.4vw;
     padding-top: 20px;
+    font-weight: 800;
 }
 .texto1 span{
     font-size: 7vw;
+    font-weight: 500;
 }
 .assets{
     position: relative;
     display: flex;
     min-height: 90vh;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 .assets .texto2{
     position: absolute;
@@ -47,12 +50,17 @@
     top: 15%;
     left: 4%;
     height: 170px;
-    padding-left: 14px;
+    padding-left: 15px;
     margin-left: 10px;
     border-radius: 30px 0px 30px 0px;
     box-shadow: 1px 12px 10px #38383863;
+    animation: textohome 1s 1 ease-in-out ;
 }
-
+@keyframes textohome{
+    0%{
+        transform: translateX(50px)
+    }
+}
 .assets .texto2 p{
     font-size: 6vw;
     font-weight: 800;
@@ -66,13 +74,16 @@
 .img{
     position: absolute;
    filter: drop-shadow(1px 12px 10px #383838fa);
-   top: 12%;
-    left: 20%;
     width: 90%;
+    animation: fotohome 1s 1 ease-in-out ;
 }
 
+@keyframes fotohome{
+    0%{
+        transform: translateX(-25px)
+    }
+}
 .img img{
-    width: 100%;
 }
 
 .botao{
@@ -80,7 +91,7 @@
     text-align: center;
     justify-content: center;
     position: absolute;
-    top: 80%;
+    top: 60%;
     left: 10%;
     background-color: white;
     height: 8%;
@@ -94,6 +105,13 @@
     background-color: transparent;
     list-style: none;
     text-decoration: none;
+    animation: btn 1s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes btn {
+    0%{
+        transform: scale(.9);
+    }
 }
 
 .botao button a{
@@ -105,8 +123,8 @@
 
 .logoimg{
     position: absolute;
-    top: 89%;
-    left: 5%;
+    top: 75%;
+    left: 2%;
 }
 
 .logoimg img{
