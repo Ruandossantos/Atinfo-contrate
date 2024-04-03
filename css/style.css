@@ -72,8 +72,8 @@ body{
     padding-left: 15px;
     margin-left: 10px;
     border-radius: 30px 0px 30px 0px;
-    box-shadow: 1px 12px 10px #38383863;
-    animation: textohome 1s 1 ease-in-out ;
+    box-shadow: 1px 12px 10px #0000007e;
+    animation: textohome 1s 1 ease-in-out;
 }
 @keyframes textohome{
     0%{
@@ -83,7 +83,7 @@ body{
 .assets .texto2 p{
     font-size: 6vw;
     font-weight: 800;
-    color: #06aa14d7;
+    color: #06aa14;
 }
 
 .assets .texto2 span{
@@ -121,8 +121,8 @@ body{
     height: 8%;
     width: 78%;
     border-radius: 30px 0px 30px 0px;
-    border: 2px solid #06aa14d7;
-    box-shadow: 1px 12px 10px #38383863;
+    border: 2px solid #06aa14;
+    box-shadow: 1px 12px 10px #38383891;
     animation: btn 2s infinite ease-in-out alternate-reverse;
 }
 .botao i{
@@ -150,18 +150,19 @@ body{
     text-decoration: none;
     font-size: 8vw;
     font-weight: 800;
-    color: #06aa14d7;
+    color: #06aa14;
 }
 
 .logoimg{
-    width: 150px;
+    width: 100px;
     height:100px;
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 2%;
+    margin-top: 20px;
 }
 
 .logoimg img{
   width: 100%;   
-  background-color: transparent;
+ 
 }
