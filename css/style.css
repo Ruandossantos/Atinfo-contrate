@@ -38,7 +38,7 @@
 .assets{
     position: relative;
     display: flex;
-    min-height: 90vh;
+    min-height: 80vh;
     padding-top: 20px;
 }
 .assets .texto2{
@@ -72,9 +72,10 @@
 }
 
 .img{
-    position: absolute;
-   filter: drop-shadow(1px 12px 10px #383838fa);
-    width: 90%;
+    position: relative;
+    filter: drop-shadow(1px 12px 10px #383838fa);
+    width: 100%;
+    min-height: 80vh;
     animation: fotohome 1s 1 ease-in-out ;
 }
 
@@ -84,6 +85,10 @@
     }
 }
 .img img{
+    top: 17%;
+    left: 19%;
+    position: absolute;
+    width: 90vw;
 }
 
 .botao{
@@ -99,13 +104,14 @@
     border-radius: 30px 0px 30px 0px;
     border: 2px solid #06aa14d7;
     box-shadow: 1px 12px 10px #38383863;
+    animation: btn 2s infinite ease-in-out alternate-reverse;
 }
 .botao button{
     border: none;
     background-color: transparent;
     list-style: none;
     text-decoration: none;
-    animation: btn 1s infinite ease-in-out alternate-reverse;
+  
 }
 
 @keyframes btn {
@@ -123,11 +129,11 @@
 
 .logoimg{
     position: absolute;
-    top: 75%;
+    top: 90%;
     left: 2%;
 }
 
 .logoimg img{
-  width: 50%;   
+  width: 40%;   
   background-color: transparent;
 }
