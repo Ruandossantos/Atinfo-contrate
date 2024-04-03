@@ -4,9 +4,16 @@
     box-sizing: border-box;
     font-family:"Montserrat"
 }
-
+body{
+    animation: opacy 1.4s 1 ease-in-out;
+}
+@keyframes opacy {
+    0%{
+        opacity: 0;
+    }
+}
 .meuconteiner{
-    background-image: linear-gradient(45deg, #109754a1, #109754a1), url(../img/bakgraund-verde.png);
+    background-image: linear-gradient(45deg, #10975327, #1097533b), url(../img/bakgraund-verde.png);
     background-size: cover;
     background-position: center center;
     min-height: 100vh;
@@ -17,24 +24,36 @@
 .texto1{
     width:100%;
     height: 70px;
-    color: white;
+    color: #f1f1f1;
     justify-content: center;
     padding: 8px;
     padding-top: 10px;
+    animation: texth1span 1s 1 ease-in-out;
 }
+
 .conteinerconteudo{
     min-height: 100vh;
     width: 100%;
 }
+
 .texto1 h1{
     font-size: 7.4vw;
     padding-top: 20px;
     font-weight: 800;
 }
-.texto1 span{
+
+.texto1 .span1{
     font-size: 7vw;
     font-weight: 500;
 }
+
+@keyframes texth1span{
+    0%{
+        transform: translateX(-250px)
+    }
+}
+
+
 .assets{
     position: relative;
     display: flex;
@@ -45,7 +64,7 @@
     position: absolute;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #f1f1f1;
     width: 60%;
     top: 15%;
     left: 4%;
@@ -96,9 +115,9 @@
     text-align: center;
     justify-content: center;
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 10%;
-    background-color: white;
+    background-color: #f1f1f1;
     height: 8%;
     width: 78%;
     border-radius: 30px 0px 30px 0px;
@@ -106,12 +125,19 @@
     box-shadow: 1px 12px 10px #38383863;
     animation: btn 2s infinite ease-in-out alternate-reverse;
 }
+.botao i{
+    color: #06aa14;
+    position: absolute;
+    top: 80%;
+    right: 0px;
+    font-size: 8vw;
+    transform: rotateY(180deg);
+}
 .botao button{
     border: none;
     background-color: transparent;
     list-style: none;
     text-decoration: none;
-  
 }
 
 @keyframes btn {
@@ -128,12 +154,14 @@
 }
 
 .logoimg{
+    width: 150px;
+    height:100px;
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 2%;
 }
 
 .logoimg img{
-  width: 40%;   
+  width: 100%;   
   background-color: transparent;
 }
